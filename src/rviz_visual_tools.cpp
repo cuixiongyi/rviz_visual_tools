@@ -52,7 +52,7 @@
 namespace rviz_visual_tools
 {
 RvizVisualTools::RvizVisualTools(const std::string &base_frame, const std::string &marker_topic)
-  : nh_("~"), marker_topic_(marker_topic), base_frame_(base_frame)
+  : nh_(""), marker_topic_(marker_topic), base_frame_(base_frame)
 {
   initialize();
 }

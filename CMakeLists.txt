@@ -26,7 +26,9 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
 )
 
-find_package(Eigen3 REQUIRED)
+find_package(PkgConfig)
+pkg_search_module(Eigen3 REQUIRED eigen3)
+# find_package(Eigen3 REQUIRED)
 find_package(Boost REQUIRED thread system)
 
 # Qt 4 or 5
